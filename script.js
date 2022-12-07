@@ -46,6 +46,11 @@ function handleSpeed() {
   createSquare(newSpeed);
 }
 
+function handleColorRange() {
+  range = parseInt(this.dataset.colorRange);
+}
+
 speedBtns.forEach((btn) => btn.addEventListener("click", handleSpeed));
+colorBtns.forEach((btn) => btn.addEventListener("click", handleColorRange));
 
 createSquare();
